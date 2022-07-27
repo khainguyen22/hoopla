@@ -1,0 +1,437 @@
+.content_text_36px {
+    max-width: 904px;
+    line-height: 44px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content_text_18px {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+.appBar {
+    background-color: unset;
+
+    * {
+        color: #000;
+    }
+
+    path {
+        fill: #39DBBA;
+    }
+}
+
+.head_appBar {
+    background-color: transparent;
+    // background-color: #39DBBA;
+
+    path {
+        fill: #fff;
+    }
+
+    * {
+        color: #fff;
+    }
+
+}
+
+
+.appBar {
+    box-shadow: unset;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    .toolbar {
+        padding: 0 40px;
+        height: 100%;
+
+        a {
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 16px;
+            margin-right: 40px;
+            text-decoration: none;
+
+            &:hover {
+                color: #e4e4e4;
+            }
+        }
+
+        .grow {
+            flex-grow: 1;
+        }
+    }
+}
+
+.main {
+    min-height: 100vh;
+
+    .head_content {
+        background-color: #39DBBA;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        .content_text_36px {
+            color: #FFFFFF;
+        }
+
+        svg {
+            position: absolute;
+            bottom: 47px;
+        }
+    }
+
+    .banner_container_wrap_images {
+        margin: 0;
+        padding: 0;
+        height: 800px;
+        width: 100%;
+
+        .banner_image_items {
+            &:first-child {
+                padding: 0;
+            }
+
+            width: 100%;
+            margin: 0;
+            display: inline-grid;
+
+            .banner_image_item {
+
+                padding-top: 0;
+                padding-left: 0;
+
+                span {
+                    height: 100% !important;
+                }
+            }
+
+        }
+    }
+
+    .secssion_3 {
+        height: 930px;
+        padding-top: 224px;
+
+        .secssion_3_container {
+
+            .grid_container {
+                .grid_item {
+                    padding: 16px;
+
+                    span {
+                        height: 220px !important;
+
+                        img {
+                            object-fit: scale-down;
+                            height: 150px !important;
+                        }
+                    }
+                }
+            }
+
+            * {
+                text-align: center;
+            }
+
+            .content_text_36px {
+                color: #000;
+            }
+
+        }
+    }
+
+    .secssion_4 {
+        background: url('../public/images/Rectangle-15.png');
+        height: 800px;
+        background-size: cover;
+    }
+
+    .secssion_5 {
+        background-color: #477DE1;
+        height: 800px;
+
+        * {
+            text-align: center;
+            color: #fff;
+        }
+
+        padding-top: 243px;
+
+        .secssion_5_container {
+            margin: auto auto;
+        }
+
+        .content_text_36px {
+            margin-bottom: 38px;
+        }
+
+        button {
+            margin-top: 45px;
+            padding: 16px 16px 14px;
+            background: #1F69C7;
+            border-radius: 4px;
+        }
+    }
+
+    .secssion_6 {
+        .secssion_6_container {
+            padding-top: 134px;
+
+            .content_text_36px {
+                padding: 90px;
+            }
+
+            .secssion_6_wrap_img {
+                display: flex;
+                flex-wrap: wrap;
+
+                .secssion_6_img {
+                    width: 20%;
+                    display: flex;
+                    margin: 25px 0;
+                    justify-content: center;
+
+                    img {
+
+                        object-fit: scale-down;
+                    }
+                }
+            }
+
+            .grid_container {
+                margin-bottom: 160px;
+
+                .grid_item {
+                    .grid_list {
+                        .list_item {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+.footer {
+    background-color: #39DBBA;
+
+    * {
+        color: #fff;
+    }
+
+    .content_text_36px {
+        padding-top: 270px;
+        padding-bottom: 190px;
+    }
+
+    .footer_contact {
+        border-top: 1px solid #fff;
+        padding: 40px 65px;
+
+        .footer_contact_container {
+
+            .footer_contact_item {
+                &:first-child {
+                    * {
+                        height: 100px !important;
+                    }
+                }
+
+                input {
+                    padding: 12px;
+                }
+
+                button {
+                    background-color: #2CA88F;
+                    color: #fff;
+                    margin-top: 30px;
+                }
+
+                img {
+                    object-fit: scale-down;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+
+    .main {
+
+        .head_content,
+        .banner_container_wrap_images,
+        .secssion_3,
+        .secssion_4,
+        .secssion_5,
+        .secssion_6_container_top,
+        .secssion_6_container_bottom {
+            min-height: 800px;
+            height: 100vh;
+        }
+    }
+
+    .footer {
+        min-height: 800px;
+        height: 100vh;
+
+        .footer_contact {
+            transform: translateY(50%);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+
+        .head_content,
+        .banner_container_wrap_images,
+        .secssion_3,
+        .secssion_5,
+        .secssion_6 .secssion_6_container {
+            height: fit-content;
+        }
+    }
+
+    .head_content {
+        padding-top: 150px;
+    }
+
+    .main {
+
+        .head_content,
+        .banner_container_wrap_images,
+        .secssion_3,
+        .secssion_5,
+        .secssion_6 .secssion_6_container {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            margin: 0;
+        }
+
+
+        .banner_container_wrap_images {
+            padding-top: 0px;
+
+            img {
+                padding: 0;
+            }
+        }
+
+
+        .secssion_6 .secssion_6_container .grid_container {
+            margin-bottom: 150px;
+        }
+
+        .secssion_5 button {
+            margin-bottom: 150px;
+        }
+    }
+
+    .footer {
+        .content_text_36px {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .footer_contact {
+            padding: 20px 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main .secssion_6 .secssion_6_container .secssion_6_wrap_img .secssion_6_img {
+        width: 50%;
+    }
+
+    .head_content {
+        padding-top: 80px;
+    }
+
+    .main {
+
+        .head_content,
+        .banner_container_wrap_images,
+        .secssion_3,
+        .secssion_5,
+        .secssion_6 .secssion_6_container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-left: 10px;
+            padding-right: 10px;
+            margin: 0;
+
+            .content_text_36px {
+                font-size: 24px;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+
+        .banner_container_wrap_images {
+            padding: 0px;
+
+            img {
+                padding: 0;
+            }
+        }
+
+
+        .secssion_6 .secssion_6_container .grid_container {
+            margin-bottom: 80px;
+        }
+
+        .secssion_5 button {
+            margin-bottom: 80px;
+        }
+    }
+
+    .footer {
+
+        .content_text_36px {
+            font-size: 24px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .footer_contact {
+            padding: 20px 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .main .secssion_6 .secssion_6_container .secssion_6_wrap_img .secssion_6_img {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+}
