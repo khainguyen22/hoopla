@@ -59,13 +59,7 @@
 
     .content_text_36px {
         max-width: 904px;
-        line-height: 44px;
-        font-weight: 400;
-        font-size: 36px;
-        text-align: center;
-        margin: 0 auto;
     }
-
     .content_text_18px {
         font-size: 18px;
         line-height: 24px;
@@ -356,6 +350,26 @@
 
         .footer_contact {
             padding: 20px 20px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    .main {
+
+        .head_content,
+        .banner_container_wrap_images,
+        .secssion_3,
+        .secssion_5,
+        .secssion_6 .secssion_6_container {
+            .content_text_36px {
+                font-size: 36px;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }
