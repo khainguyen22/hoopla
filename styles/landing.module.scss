@@ -57,6 +57,21 @@
 .main {
     min-height: 100vh;
 
+    .content_text_36px {
+        max-width: 904px;
+        line-height: 44px;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .content_text_18px {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000;
+    }
 
 
     .head_content {
@@ -270,22 +285,6 @@
         .secssion_6_container_bottom {
             min-height: 800px;
             height: 100vh;
-
-            .content_text_36px {
-                max-width: 904px;
-                line-height: 44px;
-                font-weight: 400;
-                font-size: 36px;
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            .content_text_18px {
-                font-size: 18px;
-                line-height: 24px;
-                font-weight: 400;
-                color: #000;
-            }
         }
     }
 
